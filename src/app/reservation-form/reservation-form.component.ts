@@ -32,6 +32,7 @@ onSubmit()
   {
     let reservation:Reservation = this.reservationForm.value;
     this.reservationService.addReservation(reservation);
+    this.reservationForm.reset();
   }
 }
 
