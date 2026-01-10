@@ -11,12 +11,14 @@
 
         <thead class="table-light">
           <tr>
-            <th>#</th>
+            <th>Sr No.</th>
             <th>Guest Name</th>
             <th>Guest Email</th>
             <th>Check-In</th>
             <th>Check-Out</th>
             <th>Room</th>
+            <th>Delete</th>
+            <th>Edit</th>
           </tr>
         </thead>
 
@@ -27,11 +29,9 @@
             <td>{{ res.guestEmail }}</td>
             <td>{{ res.checkInDate }}</td>
             <td>{{ res.checkOutDate }}</td>
-            <td>
-              <span class="badge bg-secondary">
-                {{ res.roomNumber }}
-              </span>
-            </td>
+            <td>{{ res.roomNumber }}</td>
+            <td><button (click)="deleteReservation(res.id)">delete</button></td>
+            <td><button [routerLink]="['/edit', res.id]">edit</button></td>
           </tr>
         </tbody>
 
