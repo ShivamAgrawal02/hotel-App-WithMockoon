@@ -1,16 +1,49 @@
-<p>Reservation List</p>
-<Div>
- <ul *ngIf="reservations.length; else noReservation">
-    <li *ngFor="let res of reservations">
-        Guest Name: {{res.guestName}} <br>
-        Guest Email: {{res.guestEmail}} <br>
-        CheckIn Date: {{res.checkInDate}} <br>
-        CheckOut Date: {{res.checkOutDate}} <br>
-        Room Number: {{res.roomNumber}} <br>
+<div class="container mt-4">
 
-    </li>
- </ul>
- <ng-template #noReservation>
-    <p>No Reservation Available</p>
- </ng-template>
-</Div>
+  <h3 class="mb-3 text-primary">Reservation List</h3>
+
+  <div class="card shadow-sm">
+
+    <div class="card-body p-0">
+
+      <table class="table table-hover table-bordered mb-0"
+             *ngIf="reservations.length; else noReservation">
+
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Guest Name</th>
+            <th>Guest Email</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let res of reservations; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ res.guestName }}</td>
+            <td>{{ res.guestEmail }}</td>
+            <td>{{ res.checkInDate }}</td>
+            <td>{{ res.checkOutDate }}</td>
+            <td>
+              <span class="badge bg-secondary">
+                {{ res.roomNumber }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+  </div>
+
+  <ng-template #noReservation>
+    <div class="alert alert-info text-center mt-3">
+      No Reservation Available
+    </div>
+  </ng-template>
+
+</div>
