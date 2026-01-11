@@ -1,27 +1,90 @@
-# HotelApp
+🏨 Hotel Reservation Management App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+This is a simple Hotel Reservation Management application built using Angular.
+The project focuses on implementing core frontend concepts while integrating form handling, routing, and clean UI using Bootstrap.
 
-## Development server
+The application allows users to:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Create new hotel reservations
 
-## Code scaffolding
+View a list of all reservations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Edit existing reservations
 
-## Build
+Delete reservations
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navigate seamlessly between pages using Angular routing
 
-## Running unit tests
+This project is built as part of my learning journey to strengthen my Angular fundamentals and understand how a real-world frontend application is structured.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+🚀 Features
 
-## Running end-to-end tests
+Reactive Forms with validation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Dynamic reservation listing using tables
 
-## Further help
+Add, edit, and delete reservations
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Angular Routing for navigation
+
+Bootstrap-based responsive UI
+
+Clean and modular component structure
+
+🧠 What I Learned from This Project
+
+While building this application, I gained hands-on experience with:
+
+Angular Reactive Forms
+
+FormGroup, FormControl, Validators
+
+Form validation and error handling
+
+Resetting forms after submission
+
+Component-Based Architecture
+
+Creating reusable components
+
+Separating concerns between UI and logic
+
+Angular Routing
+
+Configuring routes
+
+Using routerLink for navigation
+
+Passing route parameters for edit functionality
+
+Data Handling
+
+Managing in-memory data using services
+
+CRUD operations (Create, Read, Update, Delete)
+
+Bootstrap Integration
+
+Styling forms and tables
+
+Creating responsive layouts
+
+Improving UI/UX with cards, buttons, and alerts
+
+Version Control
+
+Using Git and GitHub for source control
+
+Maintaining a clean and readable project structure
+
+🛠️ Tech Stack
+
+Angular
+
+TypeScript
+
+HTML & CSS
+
+Bootstrap
+
+Git & GitHub
